@@ -1,0 +1,96 @@
+{
+  "yolo_model": "yolov8m.pt",
+  "tracker": {
+    "max_disappeared": 30,
+    "feature_threshold": 0.6,
+    "position_threshold": 3.0
+  },
+  "cameras": [
+    {
+      "camera_id": 0,
+      "name": "Camera 0",
+      "rtsp_url": "rtsp://admin:pro13579@192.168.1.65:554/stream1",
+      "camera_matrix": [
+        [
+          2739.4271523972516,
+          0.0,
+          1998.0457422925572
+        ],
+        [
+          0.0,
+          2735.44739005768,
+          1058.5108950207343
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "dist_coeffs": [
+        -0.41227382142726554,
+        0.20057226056627503,
+        -0.000351012326498984,
+        -0.00040483456789968373,
+        -0.05446954159901144
+      ],
+      "camera_height": 2000,
+      "camera_tilt": 20,
+      "height_mm": 2000,
+      "tilt_angle": 20,
+      "pole_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "undistort_alpha": 6.938893903907228e-17
+    },
+    {
+      "camera_id": 1,
+      "name": "Camera 1",
+      "rtsp_url": "rtsp://admin:pro13579@192.168.1.66:554/stream1",
+      "camera_matrix": [
+        [
+          1792.6697257165472,
+          0.0,
+          1999.333010484847
+        ],
+        [
+          0.0,
+          1802.6496028119311,
+          1073.7408878070262
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "dist_coeffs": [
+        -0.17744349079704286,
+        0.03578504356004716,
+        -0.0013747110072896138,
+        0.00064681217493047,
+        -0.0038681385170640367
+      ],
+      "camera_height": 2000,
+      "camera_tilt": 20,
+      "height_mm": 2000,
+      "tilt_angle": 20,
+      "pole_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "undistort_alpha": 0.05
+    }
+  ],
+  "detection": {
+    "model_path": "yolov8s.pt",
+    "confidence_threshold": 0.5
+  },
+  "camera_urls": [
+    "rtsp://admin:pro13579@192.168.1.65:554/stream1",
+    "rtsp://admin:pro13579@192.168.1.66:554/stream1"
+  ]
+}
